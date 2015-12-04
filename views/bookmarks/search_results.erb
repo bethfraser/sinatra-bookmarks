@@ -1,4 +1,4 @@
-RESULTS HERE<br><br>
+<h4>Results containing: '<%= params[:search]%>'</h4>
 
 <% @result.each do |result| %>
 
@@ -7,3 +7,6 @@ URL: <%= result['url']%><br>
 Category: <%= result['category']%><br><br>
 
   <%end%>
+  <br>
+  
+  <a href="/bookmarks">Go Back</a>

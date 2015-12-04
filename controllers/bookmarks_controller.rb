@@ -36,12 +36,12 @@ post '/bookmarks/:id/delete' do
   redirect to('/bookmarks')
 end
 
-get '/bookmarks/search' do
-  erb :'bookmarks/search'
-end
+# get '/bookmarks/search' do
+#   erb :'bookmarks/search'
+# end
 
 post '/bookmarks/search/new' do
-  sql = "SELECT * FROM bookmarks WHERE category LIKE '%#{params[:search][:category]}%'"
+  sql = "SELECT * FROM bookmarks WHERE lower(category) LIKE '%#{params[:search].downcase}%' OR lower(name) LIKE '%#{params[:search].downcase}%'"
 
   conn = PG.connect(dbname: 'bookmarks_app', host: 'localhost')
     @result = conn.exec(sql)
