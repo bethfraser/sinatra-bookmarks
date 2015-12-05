@@ -1,6 +1,9 @@
-<form action="/bookmarks/<%=@bookmark.id%>" method="post">
+<section class="search"><h2>EDIT BOOKMARK</h2></section>
+
+<section class="form"><form action="/bookmarks/<%=@bookmark.id%>" method="post">
 
   <%= erb :'bookmarks/_form'%>
   <button>Edit Bookmark</button>
 
 </form>
+</section>

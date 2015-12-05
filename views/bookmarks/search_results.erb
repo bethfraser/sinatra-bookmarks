@@ -1,12 +1,18 @@
-<h4>Results containing: '<%= params[:search]%>'</h4>
+<section class="search"><h3>Results containing: '<%= params[:search]%>'</h3></section>
 
-<% @result.each do |result| %>
-
-Name: <%= result['name']%><br>
-URL: <%= result['url']%><br>
-Category: <%= result['category']%><br><br>
-
-  <%end%>
-  <br>
-  
+<ul class="bookmarks_table">
+  <% @result.each do |bookmark| %>
+  <li>
+    <a href="<%=bookmark['url']%>" target="_blank" class="title"><%= bookmark['name'] %></a><br>
+    <span class="url"><%= bookmark['url'].slice(0..30)%></span><br>
+    <%= bookmark['category']%><br><br>
+    <a href="/bookmarks/<%=bookmark['id']%>/edit">Edit</a>
+    <form action="/bookmarks/<%=bookmark['id']%>/delete" method="post" class="delete">
+     <button>Delete</button></form><br>
+   </li>
+   <%end%>
+   </ul> 
+ <section class="search">
   <a href="/bookmarks">Go Back</a>
+  <br>
+</section>

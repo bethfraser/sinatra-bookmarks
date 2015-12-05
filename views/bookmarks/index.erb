@@ -1,25 +1,23 @@
-<a href="/bookmarks/new">Create Bookmark</a>
 
-
-<!-- <a href="/bookmarks/search">Search</a> -->
-
-<h3>Search by Category or Name</h3>
+<section class="search">
+<h2>SEARCH BOOKMARKS</h2>
 <form action="/bookmarks/search/new" method="post">
 <input type="text" name="search" size="70" placeholder="Search by category or name">
 <button>Search</button>
 </form>
+<br><br>
+</section>
 
-
-
-
-
-<ul>
+<ul class="bookmarks_table">
   <% @bookmarks.each do |bookmark| %>
     <li>
-      <a href="<%=bookmark.url%>" target="_blank"><%= bookmark.name %></a><br><br>
-      <a href="/bookmarks/<%=bookmark.id%>/show">Show Details</a><br>
-       <a href="/bookmarks/<%=bookmark.id%>/edit">Edit</a><br>
-       <form action="/bookmarks/<%=bookmark.id%>/delete" method="post">
+      <a href="<%=bookmark.url%>" target="_blank" class="title"><%= bookmark.name %></a><br>
+      <span class="url"><%= bookmark.url.slice(0..30)%></span><br>
+      <%= bookmark.category%>
+      <br><br>
+        
+       <a href="/bookmarks/<%=bookmark.id%>/edit">Edit</a>
+       <form action="/bookmarks/<%=bookmark.id%>/delete" method="post" class="delete">
        <button>Delete</button></form><br>
     </li>
   <% end %>

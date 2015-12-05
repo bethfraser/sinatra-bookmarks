@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bookmarks App</title>
+  <title>Bookmarker</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:400,300,700|Monda' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
-<h3>Bookmarks App</h3>
-<a href="/bookmarks">Home</a><br>
-<%= yield %>
+  <header>
+    <a href="/bookmarks" id="logo">BOOKMARKER</a>
+    <nav>
+      <ul>
+        <li><a href="/bookmarks">Home</a></li>
+        <li><a href="/bookmarks/new">New Bookmark</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main">
+
+  <%= yield %>
+
+  </div>
+
+  <footer>
+    &copy; 2015 Beth Fraser
+  </footer>
 
 </body>
 </html>

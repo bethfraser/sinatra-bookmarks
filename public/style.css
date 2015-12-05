@@ -1,0 +1,175 @@
+  body {
+  font-family: 'Quicksand', Avenir, 'Trebuchet MS', sans-serif;
+}
+
+/***** HEADER *****/
+
+header {
+  width: 100%;
+  background-color: #135588;
+  color: #FEFCFB;
+  padding: 30px 20px;
+}
+
+nav a {
+  color: #FEFCFB;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+nav a:hover {
+  color: #66d5fd;
+}
+
+#logo, #logo a {
+  font-size: 64px;
+  color: #FEFCFB;
+  text-decoration: none;
+}
+
+nav {
+  display: inline-block;
+  padding-left: 30px;
+  border-left: 2px solid #d9d9d9;
+  margin-left: 50px;
+  vertical-align: center;
+}
+
+/***** MAIN BODY *****/
+
+.search {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0; 
+}
+
+.search a {
+  color: grey;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.search input {
+  padding: 4px;
+}
+
+.search button {
+  color: #0A1128;
+  background-color: #d9d9d9;
+  padding: 7px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 7%;
+  vertical-align: top;
+}
+
+.search button:hover {
+  background-color: #66d5fd;
+}
+
+
+.search a:hover {
+  text-decoration: underline;
+}
+
+.bookmarks_table {
+  width: 100%;
+  background-color: #b1eafe;
+}
+
+.bookmarks_table li {
+  display: inline-block;
+  width: 25%;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5%;
+  text-align: center;
+  vertical-align: top;
+}
+
+.title {
+  font-size: 24px !important;
+  font-weight: 700;
+  text-decoration: none;
+  color: #135588 !important;
+  background-color: white !important;
+  margin: 0 !important;
+}
+
+.title:hover {
+  color: #66d5fd !important;
+}
+
+.bookmarks_table a, .bookmarks_table button {
+  text-decoration: none;
+  color: #0A1128;
+  background-color: #d9d9d9;
+  padding: 5px 15px;
+  margin: 10px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 7%;
+  display: inline-block;
+}
+
+.bookmarks_table a:hover, .bookmarks_table button:hover {
+  background-color: #66d5fd;
+}
+
+.delete {
+  display: inline-block;
+}
+
+.url {
+  font-size: 14px;
+  color: grey;
+}
+
+/***** FORMS *****/
+
+.form {
+  width: 40%;
+  margin-left: 30%;
+}
+
+.form label, .form input, .form form {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.form button {
+  width: 50%;
+  margin: 20px 25%;
+  display: block;
+  text-decoration: none;
+  color: #0A1128;
+  background-color: #d9d9d9;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 7%;
+}
+
+.form button:hover {
+  background-color: #66d5fd;
+  box-shadow: 2px 2px 5px grey;
+}
+
+
+/***** FOOTER *****/
+
+footer {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  clear: both;
+  background-color: #51AACA;
+
+}
+
