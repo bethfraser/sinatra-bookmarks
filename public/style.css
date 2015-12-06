@@ -37,6 +37,19 @@ nav {
 
 /***** MAIN BODY *****/
 
+.landing {
+  font-size: 62px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px 30px;
+  border: 1px solid lightgrey;
+  }
+
+.landing:hover {
+  text-decoration: none !important;
+  background-color: rgba(177, 234, 254, 0.7);
+  text-shadow: none !important;
+}
+
 .search {
   width: 100%;
   text-align: center;
@@ -61,6 +74,7 @@ nav {
 
 .search input {
   padding: 5px;
+  max-width: 70%;
 }
 
 .search button {
@@ -86,11 +100,13 @@ nav {
 .bookmarks_table {
   width: 100%;
   background-color: rgba(177, 234, 254, 0.7);
+  text-align: center;
 }
 
 .bookmarks_table li {
   display: inline-block;
-  width: 25%;
+  width: 24%;
+  max-width: 280px;
   margin: 20px;
   padding: 20px;
   background-color: white;
